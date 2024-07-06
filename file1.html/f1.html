@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/your_fontawesome_kit_id.js"></script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon Selection</title>
+    <title>My Programs</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/your_fontawesome_kit_id.js">
     <style>
-        .icon-container {
+        body {
+            font-family: sans-serif;
+        }
+
+        .program-container {
             display: flex;
             flex-wrap: wrap;
-            margin: 10px;
+            justify-content: space-around;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        .icon-container label {
-            margin: 5px;
-            cursor: pointer;
-        }
-
-        .icon {
-            width: 50px;
-            height: 50px;
-            border: 1px solid #ddd;
-            padding: 5px;
+        .program-card {
             text-align: center;
-            margin: 5px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+            position: relative;
         }
 
-        .icon.selected {
-            background-color: #ddd;
+        .program-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .program-card button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #eee;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            opacity: 0; /* Hide button initially */
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .program-card:hover button {
+            opacity: 0.8; /* Show button on hover */
+        }
+
+        .program-card button i {
+            margin-right: 5px;
+        }
+
+        .program-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <div class="icon-container">
-        <label for="icon1">
-            <i class="icon fas fa-code"></i>
-            Boot Camps
-        </label>
-        <label for="icon2">
-            <i class="icon fas fa-graduation-cap"></i>
-            Faculty Empowerment Program
-        </label>
-        <label for="icon3">
-            <i class="icon fas fa-laptop-code"></i>
-            Hackathon
-        </label>
-        <label for="icon4">
-            <i class="icon fas fa-lightbulb"></i>
-            Ideathons
-        </label>
-        <label for="icon5">
-            <i class="icon fas fa-users"></i>
-            Pre-Incubation
-        </label>
-        <label for="icon6">
-            <i class="icon fas fa-user-graduate"></i>
-            ATL Student Innovator Program
-        </label>
-        <label for="icon7">
-            <i class="icon fas fa-bullseye"></i>
-            Gain
-        </label>
-        <label for="icon8">
-            <i class="icon fas fa-rocket"></i>
-            Acceleration
-        </label>
-        <label for="icon9">
-            <i class="icon fas fa-university"></i>
-            Sujana Shibir
-        </label>
-        <label for="icon10">
-            <i class="icon fas fa-lightbulb"></i>
-            Entrepreneurship Development Program
-        </label>
-        <label for="icon11">
-            <i class="icon fas fa-comments"></i>
-            Ideation Workshops
-        </label>
-        <label for="icon12">
-            <i class="icon fas fa-tint"></i>
-            Hydroponics Cultivation
-        </label>
-    </div>
-
-    <script src="https://kit.fontawesome.com/your_fontawesome_kit_id.js"></script>
-</body>
-</html>
+    <div class="program-container">
+        <div class="program-card">
+            <img src="https://img.icons8.com/?size=100&id=wgH2Qk7mFnEl&format=png&color=000000" alt="Boot Camps">
+            <button>
+                <i class="icon fas fa-code"></i>
+                Boot Camps
+            </button>
+        </div>
+        <div class="program-card">
+            <img src="https://img.icons8.com/?size=100&id=wgH2Qk7mFnEl&format=png&color=000000" alt="Faculty Empowerment Program">
+            <button>
+                <i class="icon fas fa-graduation-cap"></i>
+                Faculty Empowerment Program
+            </button>
+        </div>
+        <div class="program-card">
+            <img src="https://img.icons8.com/?size=100&id=wgH2Qk7mFnEl&format=png&color=000000" alt="Hackathon">
+            <button>
+                <i class="icon fas fa-laptop-code"></i>
+                Hackathon
+            </button>
+        </div>
+        <div class="program-card">
+            <img src="https://img.icons8.com/?size=100&id=wgH2Qk7mFnEl&format=png&color=000000" alt="Ideathons">
+            <button>
+                <i class="icon fas fa-lightbulb"></i>
+                Ideathons
+            </button>
+        </div>
+        <div class="program-card">
+            <img src="https://img.icons8.com/?size=100&id=wgH2Qk7mFnEl&format=png&color=000000" alt
